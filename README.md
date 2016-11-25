@@ -1,11 +1,13 @@
-jsonresume-theme-compact
+jsonresume-theme-compactbr
 ========================
 
-A compact theme for a json-resume (http://jsonresume.org/)
+Based in the compact theme for a json-resume (http://jsonresume.org/)
 
 [Demo](http://themes.jsonresume.org/compact)
 
 ## Usage 
+
+version translated to PT-br 
 
 To get started with this JSONResume theme, you'll need to have the 
 JSONResume CLI installed. If you haven't already install it with 
