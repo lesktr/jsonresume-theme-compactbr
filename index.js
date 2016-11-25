@@ -15,7 +15,7 @@ function render(resume) {
 
 Handlebars.registerHelper("prettifyDate", function(resumeDate) {
   if (!resumeDate) {
-    return 'Present';
+    return 'Atual';
   }
   var newDate = Moment(resumeDate).format('MMM YYYY');
   console.log('newDate: ' + newDate);
