@@ -39,7 +39,7 @@
       <!-- Profile/summary -->
       <div class="row">
         <div class="col-xs-2">
-          <h4 class="section-title"> Profile </h4>
+          <h4 class="section-title"> PERFIL PROFISSIONAL </h4>
         </div>
         <div class="col-xs-10">
           {{summary}}
@@ -51,7 +51,7 @@
       <!-- Skills -->
       <div class="row">
         <div class="col-xs-2">
-          <h4 class="section-title"> Skills </h4>
+          <h4 class="section-title"> RESUMO DAS QUALIFICAÇÕES </h4>
         </div>
         <div class="col-xs-10">
           {{#each resume.skills}}
@@ -69,10 +69,32 @@
       </div>
       <hr />
 
+      <!-- Education -->
+      <div class="row">
+        <div class="col-xs-2">
+          <h4 class="section-title"> FORMAÇÃO ACADÊMICA </h4>
+        </div>
+        <div class="col-xs-10">
+          {{#each resume.education}}
+          <div class="row education-section">
+            <div class="col-xs-10">
+              <div class="school"> {{institution}} </div>
+              <i class="fa fa-graduation-cap"></i> {{studyType}}  {{area}}
+            </div>
+            <div class="col-xs-2">
+              <div class="pull-right">
+                {{prettifyDate endDate}}
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+
       <!-- Experience -->
       <div class="row">
         <div class="col-xs-2">
-          <h4 class="section-title"> Experience </h4>
+          <h4 class="section-title"> HISTÓRICO PROFISSIONAL </h4>
         </div>
         <div class="col-xs-10">
           {{#each resume.work}}
@@ -100,28 +122,6 @@
         </div>
       </div>
       <hr />
-
-      <!-- Education -->
-      <div class="row">
-        <div class="col-xs-2">
-          <h4 class="section-title"> Education </h4>
-        </div>
-        <div class="col-xs-10">
-          {{#each resume.education}}
-          <div class="row education-section">
-            <div class="col-xs-10">
-              <div class="school"> {{institution}} </div>
-              <i class="fa fa-graduation-cap"></i> {{studyType}} in {{area}}
-            </div>
-            <div class="col-xs-2">
-              <div class="pull-right">
-                {{prettifyDate endDate}}
-              </div>
-            </div>
-          </div>
-          {{/each}}
-        </div>
-      </div>
 
     </div>    <!-- /end container-fluid -->
   </body>
